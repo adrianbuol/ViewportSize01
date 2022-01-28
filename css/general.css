@@ -1,0 +1,59 @@
+/* Reglas generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  min-height: 150px;
+  height: 100vh;
+  margin: 0;
+}
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  height: 20%;
+  margin: 0 auto;
+}
+h1,
+h3 {
+  height: 50px;
+  font-size: 32px;
+}
+main {
+  height: 70%;
+  margin: 0 auto;
+}
+footer {
+  height: 10%;
+  margin: 0 auto;
+}
+
+/* Responsive Dessign */
+@media (orientation: landscape) {
+  header,
+  footer {
+    background-color: #324a5f;
+    color: #ccc9dc;
+  }
+  main {
+    background-color: rgb(164, 161, 180);
+    color: #324a5f;
+  }
+}
+@media (orientation: portrait) {
+  header,
+  footer {
+    background-color: #324a5f;
+    color: #ccc9dc;
+  }
+  main {
+    background-color: #596e80;
+    color: #ccc9dc;
+  }
+}
